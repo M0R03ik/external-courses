@@ -1,6 +1,5 @@
 function getRandomInt() {
-  const ran = Math.random() * 101;
-  return Math.floor(ran);
+  return Math.floor(Math.random() * 101);
 }
 
 module.exports = getRandomInt;
