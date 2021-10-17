@@ -5,6 +5,7 @@ function isValuesEqual(arr) {
       isTrue = false;
     }
   }
+
   return isTrue;
 }
 

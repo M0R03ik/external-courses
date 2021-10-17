@@ -5,6 +5,7 @@ function getMaxElem(arr) {
       max = arr[i];
     }
   }
+
   return max;
 }
 

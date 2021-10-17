@@ -3,6 +3,7 @@ function getTypeOfArg(arg) {
   if (!(type === 'string' || type === 'number') || isNaN(arg)) {
     type = undefined;
   }
+
   return type;
 }
 

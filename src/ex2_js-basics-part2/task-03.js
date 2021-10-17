@@ -13,6 +13,7 @@ function getSumEven(arr) {
       odd += 1;
     }
   }
+
   return [even, odd, zero];
 }
 
