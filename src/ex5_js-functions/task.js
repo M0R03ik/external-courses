@@ -1,76 +1,71 @@
 function Calculator() {
   let sum = 0;
-  function calculator() {
 
-  }
-
-  calculator.add = function add(a) {
-    if (a === undefined) {
-      return calculator.add;
-    }
-    sum += a;
-    function func(b) {
-      if (b === undefined) {
+  const result = {
+    add(a) {
+      if (a === undefined) {
+        return result.add;
+      }
+      sum += a;
+      function func(b) {
+        if (b === undefined) {
+          return func;
+        }
+        sum += b;
         return func;
       }
-      sum += b;
       return func;
-    }
-    return func;
-  };
-
-  calculator.subtract = function subtract(a) {
-    if (a === undefined) {
-      return calculator.subtract;
-    }
-    sum -= a;
-    function func(b) {
-      if (b === undefined) {
+    },
+    subtract(a) {
+      if (a === undefined) {
+        return result.subtract;
+      }
+      sum -= a;
+      function func(b) {
+        if (b === undefined) {
+          return func;
+        }
+        sum -= b;
         return func;
       }
-      sum -= b;
       return func;
-    }
-    return func;
-  };
-
-  calculator.divide = function divide(a) {
-    if (a === undefined) {
-      return calculator.divide;
-    }
-    sum /= a;
-    function func(b) {
-      if (b === undefined) {
+    },
+    divide(a) {
+      if (a === undefined) {
+        return result.divide;
+      }
+      sum /= a;
+      function func(b) {
+        if (b === undefined) {
+          return func;
+        }
+        sum /= b;
         return func;
       }
-      sum /= b;
       return func;
-    }
-    return func;
-  };
-
-  calculator.multiply = function multiply(a) {
-    if (a === undefined) {
-      return calculator.multiply;
-    }
-    sum *= a;
-    function func(b) {
-      if (b === undefined) {
+    },
+    multiply(a) {
+      if (a === undefined) {
+        return result.multiply;
+      }
+      sum *= a;
+      function func(b) {
+        if (b === undefined) {
+          return func;
+        }
+        sum *= b;
         return func;
       }
-      sum *= b;
       return func;
-    }
-    return func;
+    },
+    reset() {
+      sum = 0;
+      return sum;
+    },
+    getResult() { return sum; },
   };
 
-  calculator.getResult = () => sum;
-  calculator.reset = function reset() {
-    sum = 0;
-    return sum;
-  };
-
-  return calculator;
+  return result;
 }
 
 const calculator = Calculator();
