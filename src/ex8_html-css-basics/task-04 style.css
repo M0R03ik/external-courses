@@ -1,0 +1,47 @@
+.lists-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.unordered > ul {
+    list-style-type: "+ ";
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.link-list > ul{
+    list-style-type: square;
+}
+.lists > h2 {
+    text-align: center;
+}
+h2 ~ p {
+    background-color: SlateGrey;
+    font-size: 1em;
+    font-style: oblique;
+    color: black;
+    font-family:Verdana, Geneva;
+}
+table {
+    border: 2px solid greenyellow;
+    border-collapse: collapse;
+    font-weight: bold;
+	padding: 5px;
+    width: 100%;
+}
+th, td {
+    border: 2px solid greenyellow;
+    font-weight: bold;
+	padding: 5px;
+    text-align: center;
+}
+pre {
+    color: #000000;
+    background-color: hotpink;
+    height: auto;
+    width: auto;
+    font-size: 300%;
+}
+img {
+    height: 700px;
+}
