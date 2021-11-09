@@ -1,0 +1,25 @@
+#thead {
+    background-color: #c6e2ff;
+    text-transform: uppercase;
+    color: #575757;
+    font-weight: bolder;
+    font-size: 12px;
+}
+#thead th {
+    padding: 5px 0px;    
+}
+.string:nth-child(even) {
+    background-color: #c6e2ff;
+}
+.string:hover {
+    background-color: #d3d3d3;
+}
+.string td{
+    padding: 15px 10px;
+}
+.customer {
+    text-transform: capitalize;
+}
+.string :last-child::before {
+    content: "$ ";
+}
